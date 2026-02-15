@@ -9,9 +9,10 @@ const inter = Inter({ subsets: ['latin'] });
 const geistMono = GeistMono;
 
 export const metadata: Metadata = {
-  title: 'Motion-Primitives',
+  title:
+    'Motion-Primitives - UI kit to make beautiful, animated interfaces, faster.',
   description:
-    'UI kit to make beautiful, animated interfaces, faster. Open-source and customizable.',
+    'Motion-Primitives is an open-source UI kit to make beautiful, animated interfaces, faster. Built for React, Next.js, and Tailwind CSS.',
 };
 
 export default function RootLayout({
@@ -24,11 +25,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       {!isDev ? (
-        <Script
-          async
-          src='https://analytics.umami.is/script.js'
-          data-website-id='17e8fc96-321d-43a6-94e7-d571c4c66a04'
-        />
+        <Script async defer src='https://assets.onedollarstats.com/stonks.js' />
       ) : null}
       <body
         className={`${inter.className} ${geistMono.variable} bg-white font-sans antialiased dark:bg-zinc-950`}

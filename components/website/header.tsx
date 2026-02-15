@@ -38,25 +38,26 @@ export function Header() {
         <div className='flex items-center space-x-6'>
           <nav className='hidden items-center space-x-6 sm:flex'>
             <a
-              href='https://pro.motion-primitives.com/templates'
+              href='https://www.prompt-kit.com/'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-sm font-medium text-zinc-700 hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-white'
+            >
+              AI
+            </a>
+            <a
+              href='https://pro.motion-primitives.com'
               target='_blank'
               rel='noopener noreferrer'
               className='inline-flex items-center text-sm font-medium text-zinc-700 hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-white'
             >
-              Templates
-              <ProBadge />
+              Advanced
             </a>
             <Link
               href='/docs/text-effect'
               className='text-sm font-medium text-zinc-700 hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-white'
             >
               Components
-            </Link>
-            <Link
-              href='/showcase'
-              className='text-sm font-medium text-zinc-700 hover:text-zinc-950 dark:text-zinc-300 dark:hover:text-white'
-            >
-              Showcase
             </Link>
           </nav>
           <div className='hidden h-8 w-[0.5px] bg-zinc-200 sm:flex dark:bg-zinc-800' />
